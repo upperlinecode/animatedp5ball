@@ -30,7 +30,7 @@ function setup() {
 function draw() {
   background(bgColor); // redraw the background every time draw is run. (gets rid of the 'trail')
   fill(fillColor);
-  ellipse(circlex, circley, circleDiameter, circleDiameter);
+  ellipse(circlex, circley, mouseX, mouseX); // Change the diameter of the circle based on the mouse x position
 
   //We need to change the direction of the circle when it hits borders.
   // If the x coordinate of the circle plus one half of its width is the same as 0 or the width of the canvas then
